@@ -220,8 +220,7 @@
         }
 
         private static bool IsTaskIdValid(TeisterMaskContext context, int taskId)
-        {
-            return context.Tasks.Any(t => t.Id == taskId);
-        }
+            => context.Tasks.Any(t => t.Id == taskId);
+        
     }
 }
